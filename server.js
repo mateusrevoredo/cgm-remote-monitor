@@ -34,7 +34,7 @@ var translate = language.set(env.settings.language).translate;
 // setup http server
 ///////////////////////////////////////////////////
 var PORT = env.PORT;
-var HOSTNAME = env.HOSTNAME;
+var HOSTNAME = '0.0.0.0';
 
 function create (app) {
   var transport = (env.ssl
